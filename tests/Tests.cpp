@@ -42,11 +42,14 @@ void checkLineEquality(fstream& expected, fstream& actual) {
 }
 
 char* fullPath(string fileName) {
-    int defaultDirectoryLength = 41;
-    int fullPathLength = defaultDirectoryLength + fileName.length();
+    char cwd[1024];
+    getcwd(cwd, sizeof(cwd));
+
+    int defaultDirectoryLength = strlen(cwd);
+    string testFolder = "/tests/";
+    int fullPathLength = defaultDirectoryLength + testFolder.length() + fileName.length();
     char* fullPath = new char[fullPathLength];
-    std::string directory = "/home/mimovnik/Projects/unitTests/tests/";
-    directory += fileName;
+    std::string directory = cwd + testFolder + fileName;
     strcpy(fullPath, directory.c_str());
     return fullPath;
 }
