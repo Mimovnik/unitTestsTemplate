@@ -2,4 +2,5 @@ build/**
 .vscode/**
 !.vscode/launch.json
 tests/actual/**
+!tests/actual/.gitkeep
 Testing
