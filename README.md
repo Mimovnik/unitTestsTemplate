@@ -5,9 +5,9 @@ then saving output to actual-*.txt file in /tests/actual/
 and comparing it with your expected output file *.out in /tests/expected/ folder.
 ## Installing
 To install simply clone the repository and run install.sh to clone googletest
-'''
+```
 git clone https://github.com/Mimovnik/unitTestsTemplate
 ./install.sh
-'''
+```
 ## Support
 For now only Linux is supported
