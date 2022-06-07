@@ -9,7 +9,9 @@ then rename unitTestsTemplate/ folder to your projects name
 ```
 git clone https://github.com/Mimovnik/unitTestsTemplate
 ./install.sh
+cd ..
 mv unitTestsTemplate yourProjectsName
+cd yourProjectsName
 ```
 ## Support
 For now only Linux is supported
