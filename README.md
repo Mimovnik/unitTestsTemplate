@@ -1,4 +1,4 @@
-# unitTests
+# unitTestsTemplate
 A template for C++ unit testing using google tests.
 Testing works by taking input from *.in file in /tests/input/ folder
 then saving output to actual-*.txt file in /tests/actual/
